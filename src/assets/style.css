@@ -1,0 +1,23 @@
+#car1, #car2 {
+  position: absolute;
+  top: 200px;
+}
+
+#carStats {
+  position: absolute;
+  width:310px;
+  top: 300px;
+  left: 50%;
+  margin-left: -150px;
+}
+
+#car1Stats {
+  display: inline-block;
+  width:150px;
+  background-color: lightblue;
+}
+#car2Stats {
+  display: inline-block;
+  width:150px;
+  background-color: lightblue;
+}
