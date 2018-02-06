@@ -20,7 +20,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1384607
+              "duration": 0
             },
             "match": {
               "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/support/hooks.js:2"
@@ -32,10 +32,10 @@
             "keyword": "Given ",
             "result": {
               "status": "passed",
-              "duration": -14086281933901
+              "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:4"
+              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:6"
             }
           },
           {
@@ -47,7 +47,7 @@
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:14"
+              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:13"
             }
           },
           {
@@ -59,7 +59,7 @@
               "duration": 2000000000
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:21"
+              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:20"
             }
           },
           {
@@ -71,7 +71,7 @@
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:26"
+              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:25"
             }
           },
           {
