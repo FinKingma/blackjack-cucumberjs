@@ -35,7 +35,7 @@
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:6"
+              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:5"
             }
           },
           {
@@ -47,7 +47,7 @@
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:13"
+              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:11"
             }
           },
           {
@@ -59,7 +59,7 @@
               "duration": 2000000000
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:20"
+              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:17"
             }
           },
           {
@@ -71,7 +71,7 @@
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:25"
+              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:22"
             }
           },
           {

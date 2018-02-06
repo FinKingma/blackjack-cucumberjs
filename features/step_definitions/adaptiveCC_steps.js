@@ -1,15 +1,14 @@
 var assert = require('chai').assert
+var Car = require('../../src/modules/car.js')
 
 module.exports = function () {
   this.Given(/^Jim is driving at (\d+)mph$/, function (speed, done) {
-    var Car = require('../../src/modules/car.js')
     this.jim = new Car()
     this.jim.setSpeed(speed)
     done()
   })
   
   this.Given(/^John is driving at (\d+)mph$/, function (speed, done) {
-    var Car = require('../../src/modules/car.js')
     this.john = new Car(this.jim)
     this.john.setSpeed(speed)
     done()
