@@ -5,6 +5,13 @@ var adaptiveCC = {
     } else {
       return speed
     }
+  },
+  adjustToOriginalSpeed: (speed, originalSpeed) => {
+    if (originalSpeed > speed) {
+      return originalSpeed
+    } else {
+      return speed
+    }
   }
 }
 
