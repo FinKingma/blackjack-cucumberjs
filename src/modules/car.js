@@ -1,3 +1,5 @@
+var AdaptiveCC = require('./adaptiveCC')
+
 function Car (car) {
   this.speed = 0
   this.originalSpeed = 0
@@ -16,27 +18,21 @@ function Car (car) {
     if (this.originalSpeed > this.speed) this.speed = this.originalSpeed
   }
 
-  this.adjustToFrontCar = () => {
-    if (this.adaptiveCar) {
-      if (this.watchedCar.pos - this.pos < 50 && this.watchedCar.speed < this.speed) {
-        this.speed = this.watchedCar.speed
-      }
-    }
-  }
-
   this.changePos = () => {
-    this.pos += parseInt(this.speed)
+    this.pos += this.speed
   }
 
   this.setSpeed = (speed) => {
-    this.originalSpeed = speed
-    this.speed = speed
+    this.originalSpeed = parseInt(speed)
+    this.speed = parseInt(speed)
   }
 
   this.racing = setInterval(() => {
     this.adjustToOriginalSpeed()
 
-    this.adjustToFrontCar()
+    if (this.adaptiveCar) {
+      this.speed = AdaptiveCC.adjustToFrontCar(this.speed, this.pos, this.watchedCar)
+    }
 
     this.changePos()
   }, 25)

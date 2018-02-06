@@ -1,8 +1,8 @@
 var Car = require('./car')
 
-function Race () {
+function SetupCarWithCC () {
   this.car1 = new Car(undefined)
   this.car2 = new Car(this.car1)
 }
 
-module.exports = Race
+module.exports = SetupCarWithCC

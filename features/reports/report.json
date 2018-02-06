@@ -1,0 +1,92 @@
+[
+  {
+    "id": "Adaptive-Cruise-Control",
+    "name": "Adaptive Cruise Control",
+    "description": "As a Driver\nI want my car to adjust its speed to the car in front of me\nSo that I can keep reading my book",
+    "line": 1,
+    "keyword": "Feature",
+    "uri": "/Users/finkingma/myProjects/adaptive-cruise-control/features/AdaptiveCC.feature",
+    "elements": [
+      {
+        "name": "adjusting speed to car in front",
+        "id": "Adaptive-Cruise-Control;adjusting-speed-to-car-in-front",
+        "line": 6,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1384607
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/support/hooks.js:2"
+            }
+          },
+          {
+            "name": "Jim is driving at 90mph",
+            "line": 7,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": -14086281933901
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:4"
+            }
+          },
+          {
+            "name": "John is driving at 100mph",
+            "line": 8,
+            "keyword": "And ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:14"
+            }
+          },
+          {
+            "name": "John's car approaches Jims'",
+            "line": 9,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 2000000000
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:21"
+            }
+          },
+          {
+            "name": "John's car adjusts its speed to Jim's car",
+            "line": 10,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:26"
+            }
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/support/hooks.js:5"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
