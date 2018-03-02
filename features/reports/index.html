@@ -262,8 +262,8 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">adaptive-cruise-control</div>
           <div class="label-container">
-            <span class="label label-success" title=scenarios>Passed: 1</span>
-            <span class="label label-danger" title=scenarios>Failed: 0</span>
+            <span class="label label-success" title=scenarios>Passed: 0</span>
+            <span class="label label-danger" title=scenarios>Failed: 1</span>
           </div>
         </div>
       </div>
@@ -362,8 +362,8 @@ pre {
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>Adaptive Cruise Control
                         <span class="label-container">
-              <span class="label label-success" title="1 Scenarios Passed">1</span>
               
+              <span class="label label-danger" title="1 Scenarios Failed">1</span>
               
               
               
@@ -374,7 +374,7 @@ pre {
             </div>
             <div id="collapseFeatureadaptive_cruise_control0" class="panel-collapse collapse">
                 <div class="panel-body">
-                    <div class="description">As a Driver<br />I want my car to adjust its speed to the car in front of me<br />So that I can keep reading my book</div>
+                    <div class="description">As a driver<br />I want my car to adjust its speed to the car in front of me<br />So that I can use my cruise control in traffic</div>
                     
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -384,18 +384,18 @@ pre {
                                 <a data-toggle="collapse" href="#collapseScenarioadaptive_cruise_control0_0">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>adjusting speed to car in front
+                                            <b>Scenario:</b>
                                         </div>
                                         <div>
                             <span class="label-container">
-                              <span class="label label-success" title="4 Steps Passed">4</span>
+                              <span class="label label-success" title="3 Steps Passed">3</span>
                               
                               
                               
-                              
+                              <span class="label label-danger" title="1 Steps Failed">1</span>
                               
                             </span>
                                         </div>
@@ -419,7 +419,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> Jim is driving at 90mph</span>
+                          <span> John drives at 60 mph</span>
                           
                               <span class="step-duration">
                                < 1ms
@@ -451,7 +451,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">And </span>
-                          <span> John is driving at 100mph</span>
+                          <span> William drives at 70 mph</span>
                           
                               <span class="step-duration">
                                < 1ms
@@ -483,10 +483,10 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">When </span>
-                          <span> John&#39;s car approaches Jims&#39;</span>
+                          <span> William nears John</span>
                           
                               <span class="step-duration">
-                               33333m 20s 
+                               < 1ms
                               </span>
                             
                          
@@ -510,15 +510,15 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-danger" title="Failed"><i class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> John&#39;s car adjusts its speed to Jim&#39;s car</span>
+                          <span> John&#39;s car will adjust its speed to 60 mph</span>
                           
                               <span class="step-duration">
-                               < 1ms
+                               33333m 20s 
                               </span>
                             
                          
@@ -526,6 +526,16 @@ pre {
                                     
                                     
 
+                                    
+                                    <a href="#error0_04" data-toggle="collapse">+ Show Error</a>
+                                    <div id="error0_04" class="collapse">
+                                        <pre class=info>AssertionError: johns car does not drive with expected speed
+    at World.(anonymous) (/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:25:9)
+    at process._tickCallback (internal/process/next_tick.js:112:11)
+    at Function.Module.runMain (module.js:705:11)
+    at startup (bootstrap_node.js:193:16)
+    at bootstrap_node.js:660:3</pre>
+                                    </div>
                                     
 
                                     
@@ -575,15 +585,15 @@ pre {
         google.load("visualization", "1", {packages: ["corechart"]});
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Features",
-                                                            "failed" : 0,
-                                                            "passed" : 1,
+                                                            "failed" : 1,
+                                                            "passed" : 0,
                                                             "ambiguous" : 0
                                                         })
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
-                                                            "failed" : 0,
-                                                            "passed" : 1,
+                                                            "failed" : 1,
+                                                            "passed" : 0,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,

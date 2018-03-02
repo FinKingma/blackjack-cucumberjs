@@ -2,14 +2,14 @@
   {
     "id": "Adaptive-Cruise-Control",
     "name": "Adaptive Cruise Control",
-    "description": "As a Driver\nI want my car to adjust its speed to the car in front of me\nSo that I can keep reading my book",
+    "description": "As a driver\nI want my car to adjust its speed to the car in front of me\nSo that I can use my cruise control in traffic",
     "line": 1,
     "keyword": "Feature",
-    "uri": "/Users/finkingma/myProjects/adaptive-cruise-control/features/AdaptiveCC.feature",
+    "uri": "/Users/finkingma/myProjects/adaptive-car/features/AdaptiveCC.feature",
     "elements": [
       {
-        "name": "adjusting speed to car in front",
-        "id": "Adaptive-Cruise-Control;adjusting-speed-to-car-in-front",
+        "name": "",
+        "id": "Adaptive-Cruise-Control;",
         "line": 6,
         "keyword": "Scenario",
         "description": "",
@@ -23,11 +23,11 @@
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/support/hooks.js:2"
+              "location": "/Users/finkingma/myProjects/adaptive-car/features/support/hooks.js:2"
             }
           },
           {
-            "name": "Jim is driving at 90mph",
+            "name": "John drives at 60 mph",
             "line": 7,
             "keyword": "Given ",
             "result": {
@@ -35,11 +35,11 @@
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:5"
+              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:5"
             }
           },
           {
-            "name": "John is driving at 100mph",
+            "name": "William drives at 70 mph",
             "line": 8,
             "keyword": "And ",
             "result": {
@@ -47,31 +47,32 @@
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:11"
+              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:11"
             }
           },
           {
-            "name": "John's car approaches Jims'",
+            "name": "William nears John",
             "line": 9,
             "keyword": "When ",
-            "result": {
-              "status": "passed",
-              "duration": 2000000000
-            },
-            "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:17"
-            }
-          },
-          {
-            "name": "John's car adjusts its speed to Jim's car",
-            "line": 10,
-            "keyword": "Then ",
             "result": {
               "status": "passed",
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/step_definitions/adaptiveCC_steps.js:22"
+              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:17"
+            }
+          },
+          {
+            "name": "John's car will adjust its speed to 60 mph",
+            "line": 10,
+            "keyword": "Then ",
+            "result": {
+              "status": "failed",
+              "duration": 2000000000,
+              "error_message": "AssertionError: johns car does not drive with expected speed\n    at World.<anonymous> (/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:25:9)\n    at process._tickCallback (internal/process/next_tick.js:112:11)\n    at Function.Module.runMain (module.js:705:11)\n    at startup (bootstrap_node.js:193:16)\n    at bootstrap_node.js:660:3"
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:23"
             }
           },
           {
@@ -82,7 +83,7 @@
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-cruise-control/features/support/hooks.js:5"
+              "location": "/Users/finkingma/myProjects/adaptive-car/features/support/hooks.js:5"
             }
           }
         ]
