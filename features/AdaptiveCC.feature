@@ -7,4 +7,4 @@ Scenario:
   Given John drives at 60 mph
   And William drives at 70 mph
   When William nears John
-  Then John's car will adjust its speed to 60 mph
+  Then Williams car will adjust its speed to 60 mph

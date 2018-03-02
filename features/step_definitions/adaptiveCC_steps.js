@@ -17,12 +17,13 @@ module.exports = function () {
     this.When(/^William nears John$/, function (callback) {
         this.John.setPosition(1000)
         this.William.setPosition(900)
+        this.William.spotCar(this.John)
         callback()
     });
 
-    this.Then(/^John's car will adjust its speed to (\d+) mph$/, function (expectedSpeed, callback) {
+    this.Then(/^Williams car will adjust its speed to (\d+) mph$/, function (expectedSpeed, callback) {
         this.clock.tick(2000)
-        assert(this.John.speed === expectedSpeed, 'johns car does not drive with expected speed')
+        assert(this.William.speed == expectedSpeed, 'Williams car does not drive with expected speed')
         callback()
     });
 }

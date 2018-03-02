@@ -63,16 +63,15 @@
             }
           },
           {
-            "name": "John's car will adjust its speed to 60 mph",
+            "name": "Williams car will adjust its speed to 60 mph",
             "line": 10,
             "keyword": "Then ",
             "result": {
-              "status": "failed",
-              "duration": 2000000000,
-              "error_message": "AssertionError: johns car does not drive with expected speed\n    at World.<anonymous> (/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:25:9)\n    at process._tickCallback (internal/process/next_tick.js:112:11)\n    at Function.Module.runMain (module.js:705:11)\n    at startup (bootstrap_node.js:193:16)\n    at bootstrap_node.js:660:3"
+              "status": "passed",
+              "duration": 2000000000
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:23"
+              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:24"
             }
           },
           {
