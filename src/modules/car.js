@@ -3,9 +3,6 @@
 function Car () {
   this.speed = 0
   this.pos = 0
-  this.carInFront = undefined
-  this.originalSpeed = undefined
-  this.CruiseControlAdjustment = false
 
   this.updatePos = () => {
     this.pos += this.speed
@@ -17,6 +14,10 @@ function Car () {
 
   this.setSpeed = (speed) => {
     this.speed = parseInt(speed)
+  }
+
+  this.trackCar = (car) => {
+    this.carInFront = car
   }
 
   this.racing = setInterval(() => {
