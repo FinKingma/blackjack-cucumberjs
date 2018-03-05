@@ -1,5 +1,3 @@
-// var AdaptiveCC = require('./adaptiveCC')
-
 function Car () {
   this.speed = 0
   this.pos = 0
