@@ -2,7 +2,7 @@
   "name": "adaptive-cruise-control",
   "version": "1.0.0",
   "description": "adaptive cruise control",
-  "author": "Fin Kingma <fkingma@xebia.com>",
+  "author": "Fin Kingma <fin.kingma@praegus.nl>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
