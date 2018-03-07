@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Cruiser from '@/components/Cruiser'
+import BlackJackViewer from '@/components/BlackJackViewer'
 
 Vue.use(Router)
 
@@ -8,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Cruiser',
-      component: Cruiser
+      name: 'BlackJackViewer',
+      component: BlackJackViewer
     }
   ]
 })
