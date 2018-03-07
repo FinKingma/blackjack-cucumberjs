@@ -1,16 +1,16 @@
 [
   {
-    "id": "Adaptive-Cruise-Control",
-    "name": "Adaptive Cruise Control",
-    "description": "As a driver\nI want my car to adjust its speed to the car in front of me\nSo that I can use my cruise control in traffic",
+    "id": "Score",
+    "name": "Score",
+    "description": "",
     "line": 1,
     "keyword": "Feature",
-    "uri": "/Users/finkingma/myProjects/adaptive-car/features/AdaptiveCC.feature",
+    "uri": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/blackjack_score.feature",
     "elements": [
       {
-        "name": "Car adjusts its speed when it reaches another car",
-        "id": "Adaptive-Cruise-Control;car-adjusts-its-speed-when-it-reaches-another-car",
-        "line": 6,
+        "name": "Your score is calculated when the game has ended",
+        "id": "Score;your-score-is-calculated-when-the-game-has-ended",
+        "line": 10,
         "keyword": "Scenario",
         "description": "",
         "type": "scenario",
@@ -23,55 +23,31 @@
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/support/hooks.js:2"
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
             }
           },
           {
-            "name": "John drives at 60 mph",
-            "line": 7,
+            "name": "John has ace, jack, 7",
+            "line": 4,
             "keyword": "Given ",
             "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:5"
+              "status": "undefined"
             }
           },
           {
-            "name": "William drives at 70 mph",
-            "line": 8,
-            "keyword": "And ",
-            "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:11"
-            }
-          },
-          {
-            "name": "William nears John",
-            "line": 9,
+            "name": "John ends his game",
+            "line": 5,
             "keyword": "When ",
             "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:17"
+              "status": "undefined"
             }
           },
           {
-            "name": "Williams car will adjust its speed to 60 mph",
-            "line": 10,
-            "keyword": "Then ",
+            "name": "your score is 18",
+            "line": 6,
+            "keyword": "And ",
             "result": {
-              "status": "passed",
-              "duration": 2000000000
-            },
-            "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:23"
+              "status": "undefined"
             }
           },
           {
@@ -82,14 +58,70 @@
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/support/hooks.js:5"
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
             }
           }
         ]
       },
       {
-        "name": "Cruise Control adjustment is activated at a car distance of 10m",
-        "id": "Adaptive-Cruise-Control;cruise-control-adjustment-is-activated-at-a-car-distance-of-10m",
+        "name": "Your score is calculated when the game has ended",
+        "id": "Score;your-score-is-calculated-when-the-game-has-ended",
+        "line": 11,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
+            }
+          },
+          {
+            "name": "John has ace, jack",
+            "line": 4,
+            "keyword": "Given ",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "name": "John ends his game",
+            "line": 5,
+            "keyword": "When ",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "name": "your score is 21",
+            "line": 6,
+            "keyword": "And ",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Your score is calculated when the game has ended",
+        "id": "Score;your-score-is-calculated-when-the-game-has-ended",
         "line": 12,
         "keyword": "Scenario",
         "description": "",
@@ -103,43 +135,31 @@
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/support/hooks.js:2"
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
             }
           },
           {
-            "name": "Johns is at the 20m marker",
-            "line": 13,
+            "name": "John has 10, 10, jack",
+            "line": 4,
             "keyword": "Given ",
             "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:31"
+              "status": "undefined"
             }
           },
           {
-            "name": "William is approaching John at the 10m marker",
-            "line": 14,
+            "name": "John ends his game",
+            "line": 5,
             "keyword": "When ",
             "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:37"
+              "status": "undefined"
             }
           },
           {
-            "name": "Williams cruise control adjustment is activated",
-            "line": 15,
-            "keyword": "Then ",
+            "name": "your score is 30",
+            "line": 6,
+            "keyword": "And ",
             "result": {
-              "status": "passed",
-              "duration": 1000000000
-            },
-            "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:44"
+              "status": "undefined"
             }
           },
           {
@@ -150,15 +170,25 @@
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/support/hooks.js:5"
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
             }
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "id": "Playing-BlackJack",
+    "name": "Playing BlackJack",
+    "description": "",
+    "line": 1,
+    "keyword": "Feature",
+    "uri": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/playing_blackjack.feature",
+    "elements": [
       {
-        "name": "Car returns to its original speed when there are no cars in the vicinity",
-        "id": "Adaptive-Cruise-Control;car-returns-to-its-original-speed-when-there-are-no-cars-in-the-vicinity",
-        "line": 17,
+        "name": "you start the game with 2 cards",
+        "id": "Playing-BlackJack;you-start-the-game-with-2-cards",
+        "line": 3,
         "keyword": "Scenario",
         "description": "",
         "type": "scenario",
@@ -171,55 +201,23 @@
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/support/hooks.js:2"
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
             }
           },
           {
-            "name": "John drives at 60 mph",
-            "line": 18,
-            "keyword": "Given ",
-            "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:5"
-            }
-          },
-          {
-            "name": "William nears John at 70 mph",
-            "line": 19,
-            "keyword": "And ",
-            "result": {
-              "status": "passed",
-              "duration": 2000000000
-            },
-            "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:50"
-            }
-          },
-          {
-            "name": "John speeds up to 80 mph",
-            "line": 20,
+            "name": "John starts playing blackjack",
+            "line": 4,
             "keyword": "When ",
             "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:60"
+              "status": "undefined"
             }
           },
           {
-            "name": "Williams car will adjust its speed back to 70 mph",
-            "line": 21,
+            "name": "John has two cards",
+            "line": 5,
             "keyword": "Then ",
             "result": {
-              "status": "passed",
-              "duration": 2000000000
-            },
-            "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/step_definitions/adaptiveCC_steps.js:65"
+              "status": "undefined"
             }
           },
           {
@@ -230,7 +228,231 @@
               "duration": 0
             },
             "match": {
-              "location": "/Users/finkingma/myProjects/adaptive-car/features/support/hooks.js:5"
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
+            }
+          }
+        ]
+      },
+      {
+        "name": "You can get a new card during your turn",
+        "id": "Playing-BlackJack;you-can-get-a-new-card-during-your-turn",
+        "line": 7,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
+            }
+          },
+          {
+            "name": "John has started playing blackjack",
+            "line": 8,
+            "keyword": "Given ",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "name": "John asks for a new card",
+            "line": 9,
+            "keyword": "When ",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "name": "John has a new card",
+            "line": 10,
+            "keyword": "Then ",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Your turn is over when you reach a score above 21",
+        "id": "Playing-BlackJack;your-turn-is-over-when-you-reach-a-score-above-21",
+        "line": 19,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
+            }
+          },
+          {
+            "name": "John has a score of 20",
+            "line": 13,
+            "keyword": "Given ",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "name": "John gets a card with the score 2",
+            "line": 14,
+            "keyword": "When ",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "name": "the game is yes",
+            "line": 15,
+            "keyword": "Then ",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Your turn is over when you reach a score above 21",
+        "id": "Playing-BlackJack;your-turn-is-over-when-you-reach-a-score-above-21",
+        "line": 20,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
+            }
+          },
+          {
+            "name": "John has a score of 20",
+            "line": 13,
+            "keyword": "Given ",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "name": "John gets a card with the score 1",
+            "line": 14,
+            "keyword": "When ",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "name": "the game is no",
+            "line": 15,
+            "keyword": "Then ",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
+            }
+          }
+        ]
+      },
+      {
+        "name": "You can end the game during your turn",
+        "id": "Playing-BlackJack;you-can-end-the-game-during-your-turn",
+        "line": 22,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
+            }
+          },
+          {
+            "name": "John has started playing blackjack",
+            "line": 23,
+            "keyword": "Given ",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "name": "John ends his game",
+            "line": 24,
+            "keyword": "When ",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "name": "the game is over",
+            "line": 25,
+            "keyword": "Then ",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
             }
           }
         ]
