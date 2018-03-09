@@ -1,6 +1,6 @@
-# adaptive-cruise-control
+# blackjack-player
 
-> adaptive cruise control
+> blackjack player
 
 ## Build Setup
 

@@ -1,12 +1,12 @@
 Feature: Score
 
 Scenario Outline: Your score is calculated when the game has ended
-	Given John has <cards>
+	Given John has <cards> in his hands
 	When John ends his game
-	And your score is <endScore>
+	Then your score is <endScore>
 
 Examples:
-| cards 		| endScore 	|
-| ace, jack, 7	| 18		|
-| ace, jack	    | 21		|
-| 10, 10, jack	| 30		|
+| cards 		| endScore  |
+| a, j, 7	  | 18		    |
+| a, j	    | 21		    |
+| 10, 10, j	| 30		    |

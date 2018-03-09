@@ -1,21 +1,23 @@
 <template>
   <div>
     <h1>{{ msg }}</h1>
-    <table id="cardDeck" v-if="cards">
-      <tr>
-        <td id="card" v-for="card in cards" :key="card.id">
-          {{ card.rank }}
-          of
-          {{ card.suite }}
-        </td>
-      </tr>
-    </table>
-    <p>{{ score }}</p>
-    <button v-on:click="newGame">new game</button>
-    <button v-if="playing" v-on:click="hit">hit</button>
-    <button v-if="playing" v-on:click="stand">stand</button>
-    <p v-if="won">Congratulations! You have won!</p>
-    <p v-if="won == false">Awwwe, you have lost</p>
+
+    <div class="playingCards rotateHand">
+      <div v-for="card in cards" :key="card.id" :class="'card rank-' + card.rank + ' ' + card.suit">
+        <span class="rank">{{ card.rank }}</span>
+        <span v-if="card.suit === 'spades'" class="suit">&spades;</span>
+        <span v-if="card.suit === 'hearts'" class="suit">&hearts;</span>
+        <span v-if="card.suit === 'clubs'" class="suit">&clubs;</span>
+        <span v-if="card.suit === 'diams'" class="suit">&diams;</span>
+      </div>
+    </div>
+    <p id="score">Score: {{ score }}</p>
+    <button id="newGameBtn" v-on:click="newGame">new game</button>
+    <button id="hitBtn" v-if="playing" v-on:click="hit">hit</button>
+    <button id="standBtn" v-if="playing" v-on:click="stand">stand</button>
+    <p v-if="won">Congratulations! You have won! (House had {{ houseScore }})</p>
+    <p v-if="won == false & score > 21">Awwwe, you have lost. You were busted.</p>
+    <p v-if="won == false & score <= 21">Awwwe, you have lost. The house won with {{ houseScore }}</p>
   </div>
 </template>
 
@@ -30,7 +32,8 @@ export default {
       cards: undefined,
       score: 0,
       playing: false,
-      won: undefined
+      won: undefined,
+      houseScore: undefined
     }
   },
   mounted () {
@@ -38,26 +41,34 @@ export default {
   },
   methods: {
     newGame () {
-      this.game.newGame()
+      this.game.startGame()
       this.cards = this.game.cards
-      this.score = this.game.calculateScore()
-      this.playing = true
-      this.won = undefined
+      this.game.calculateplayerScore()
+      this.score = this.game.playerScore
+      this.houseScore = this.game.houseScore
+      this.playing = this.game.playing
+      this.won = this.game.won
     },
     hit () {
       this.game.drawCard()
-      this.score = this.game.calculateScore()
-      if (this.score > 21) {
-        this.playing = false
-        this.won = false
-      }
+      this.game.calculateplayerScore()
+      this.score = this.game.playerScore
+      this.playing = this.game.playing
+      this.won = this.game.won
     },
     stand () {
-      this.playing = false
-      this.won = this.game.haveYouWon()
+      this.game.stand()
+      this.playing = this.game.playing
+      this.houseScore = this.game.houseScore
+      this.won = this.game.won
+      console.log('won: ' + this.won)
+      console.log('housescore: ' + this.houseScore)
     }
   }
 }
 </script>
 
-<style src="../assets/style.css">
+<style lang="css">
+@import '../assets/style.css';
+@import '../assets/cards.css';
+</style>

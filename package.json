@@ -9,6 +9,7 @@
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js",
     "test": "./node_modules/.bin/cucumber-js --compiler js:babel-register --format json:./features/reports/report.json",
+    "test:web": "cypress run",
     "lint": "eslint --ext .js,.vue src test/unit",
     "build": "node build/build.js"
   },
@@ -37,6 +38,7 @@
     "css-loader": "^0.28.0",
     "cucumber": "^0.10.4",
     "cucumber-html-reporter": "^2.0.3",
+    "cypress": "^2.1.0",
     "eslint": "^4.15.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",
@@ -60,6 +62,7 @@
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",
     "rimraf": "^2.6.0",
+    "selenium-cucumber-js": "^1.5.12",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
     "sinon": "^4.2.2",

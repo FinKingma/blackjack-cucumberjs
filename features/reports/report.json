@@ -1,0 +1,554 @@
+[
+  {
+    "id": "Score",
+    "name": "Score",
+    "description": "",
+    "line": 1,
+    "keyword": "Feature",
+    "uri": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/blackjack_score.feature",
+    "elements": [
+      {
+        "name": "Your score is calculated when the game has ended",
+        "id": "Score;your-score-is-calculated-when-the-game-has-ended",
+        "line": 10,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
+            }
+          },
+          {
+            "name": "John has a, j, 7 in his hands",
+            "line": 4,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/blackjack_score_steps.js:14"
+            }
+          },
+          {
+            "name": "John ends his game",
+            "line": 5,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/blackjack_score_steps.js:46"
+            }
+          },
+          {
+            "name": "your score is 18",
+            "line": 6,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/blackjack_score_steps.js:51"
+            }
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Your score is calculated when the game has ended",
+        "id": "Score;your-score-is-calculated-when-the-game-has-ended",
+        "line": 11,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
+            }
+          },
+          {
+            "name": "John has a, j in his hands",
+            "line": 4,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/blackjack_score_steps.js:14"
+            }
+          },
+          {
+            "name": "John ends his game",
+            "line": 5,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/blackjack_score_steps.js:46"
+            }
+          },
+          {
+            "name": "your score is 21",
+            "line": 6,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/blackjack_score_steps.js:51"
+            }
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Your score is calculated when the game has ended",
+        "id": "Score;your-score-is-calculated-when-the-game-has-ended",
+        "line": 12,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
+            }
+          },
+          {
+            "name": "John has 10, 10, j in his hands",
+            "line": 4,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/blackjack_score_steps.js:14"
+            }
+          },
+          {
+            "name": "John ends his game",
+            "line": 5,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/blackjack_score_steps.js:46"
+            }
+          },
+          {
+            "name": "your score is 30",
+            "line": 6,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/blackjack_score_steps.js:51"
+            }
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Playing-BlackJack",
+    "name": "Playing BlackJack",
+    "description": "",
+    "line": 1,
+    "keyword": "Feature",
+    "uri": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/playing_blackjack.feature",
+    "elements": [
+      {
+        "name": "you start the game with 2 cards",
+        "id": "Playing-BlackJack;you-start-the-game-with-2-cards",
+        "line": 3,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
+            }
+          },
+          {
+            "name": "John is playing blackjack",
+            "line": 4,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/player_blackjack_steps.js:8"
+            }
+          },
+          {
+            "name": "John has two cards",
+            "line": 5,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/player_blackjack_steps.js:14"
+            }
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
+            }
+          }
+        ]
+      },
+      {
+        "name": "You can get a new card during your turn",
+        "id": "Playing-BlackJack;you-can-get-a-new-card-during-your-turn",
+        "line": 7,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
+            }
+          },
+          {
+            "name": "John is playing blackjack",
+            "line": 8,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/player_blackjack_steps.js:8"
+            }
+          },
+          {
+            "name": "John asks for a new card",
+            "line": 9,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/player_blackjack_steps.js:19"
+            }
+          },
+          {
+            "name": "John has three cards",
+            "line": 10,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/player_blackjack_steps.js:24"
+            }
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Your turn is over when you reach a score above 21",
+        "id": "Playing-BlackJack;your-turn-is-over-when-you-reach-a-score-above-21",
+        "line": 19,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
+            }
+          },
+          {
+            "name": "John has a score of 14",
+            "line": 13,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/player_blackjack_steps.js:29"
+            }
+          },
+          {
+            "name": "John gets a card with the score 8",
+            "line": 14,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/player_blackjack_steps.js:36"
+            }
+          },
+          {
+            "name": "the game is over",
+            "line": 15,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/player_blackjack_steps.js:41"
+            }
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Your turn is over when you reach a score above 21",
+        "id": "Playing-BlackJack;your-turn-is-over-when-you-reach-a-score-above-21",
+        "line": 20,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
+            }
+          },
+          {
+            "name": "John has a score of 14",
+            "line": 13,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/player_blackjack_steps.js:29"
+            }
+          },
+          {
+            "name": "John gets a card with the score 7",
+            "line": 14,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/player_blackjack_steps.js:36"
+            }
+          },
+          {
+            "name": "the game is not over",
+            "line": 15,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/player_blackjack_steps.js:41"
+            }
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
+            }
+          }
+        ]
+      },
+      {
+        "name": "You can end the game during your turn",
+        "id": "Playing-BlackJack;you-can-end-the-game-during-your-turn",
+        "line": 22,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:4"
+            }
+          },
+          {
+            "name": "John is playing blackjack",
+            "line": 23,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/player_blackjack_steps.js:8"
+            }
+          },
+          {
+            "name": "John ends his game",
+            "line": 24,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/blackjack_score_steps.js:46"
+            }
+          },
+          {
+            "name": "the game is over",
+            "line": 25,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/step-definitions/player_blackjack_steps.js:41"
+            }
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "match": {
+              "location": "/Users/finkingma/myProjects/CucumberJS-Technical-training/features/support/hooks.js:6"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

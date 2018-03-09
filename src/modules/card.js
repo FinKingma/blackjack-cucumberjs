@@ -1,21 +1,23 @@
-const suits = ['hearts', 'spades', 'diamonds', 'clubs']
-const ranks = ['7', '8', '9', '10', 'jack', 'queen', 'king', 'ace']
+const suits = ['hearts', 'spades', 'diams', 'clubs']
+const ranks = ['7', '8', '9', '10', 'j', 'q', 'k', 'a']
 
-export class Card {
-  constructor () {
-    this.rank = newRank()
-    this.points = getPoints(this.rank)
-    this.suite = newSuit()
-  }
+function Card (fixedRank) {
+  this.rank = newRank(fixedRank)
+  this.points = getPoints(this.rank)
+  this.suit = newSuit()
 }
 
 var newSuit = () => {
   const nr = Math.floor(Math.random() * suits.length)
   return suits[nr]
 }
-var newRank = () => {
-  const nr = Math.floor(Math.random() * ranks.length)
-  return ranks[nr]
+var newRank = (fixedRank) => {
+  if (fixedRank) {
+    return fixedRank
+  } else {
+    const nr = Math.floor(Math.random() * ranks.length)
+    return ranks[nr]
+  }
 }
 var getPoints = (rank) => {
   let points
@@ -32,17 +34,18 @@ var getPoints = (rank) => {
     case '10':
       points = 10
       break
-    case 'jack':
-    case 'queen':
-    case 'king':
+    case 'j':
+    case 'q':
+    case 'k':
       points = 10
       break
-    case 'ace':
+    case 'a':
       points = 11
       break
     default:
       throw new Error(rank + ' could not be converted to points')
   }
-  console.log(points)
   return points
 }
+
+module.exports = Card
