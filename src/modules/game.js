@@ -1,4 +1,4 @@
-import Card from './card'
+var Card = require('./card')
 
 function Game () {
   this.cards = []
@@ -9,25 +9,17 @@ function Game () {
 
   this.startGame = (fixedCard1, fixedCard2) => {
     this.cards = []
-    if (fixedCard1) this.cards.push(new Card(fixedCard1))
-    else this.cards.push(new Card())
-
-    if (fixedCard2) this.cards.push(new Card(fixedCard2))
-    else this.cards.push(new Card())
+    this.cards.push(new Card(fixedCard1))
+    this.cards.push(new Card(fixedCard2))
 
     this.playing = true
-    this.won = undefined
     this.calculateplayerScore()
   }
+
   this.drawCard = (fixedCard) => {
-    if (fixedCard) this.cards.push(new Card(fixedCard))
-    else this.cards.push(new Card())
+    this.cards.push(new Card(fixedCard))
 
     this.calculateplayerScore()
-    if (this.playerScore > 21) {
-      this.playing = false
-      this.won = false
-    }
   }
   this.calculateplayerScore = () => {
     let score = 0
@@ -39,6 +31,11 @@ function Game () {
     while (score > 21 && aces > 0) {
       score -= 10
       aces -= 1
+    }
+
+    if (score > 21) {
+      this.playing = false
+      this.won = false
     }
 
     this.playerScore = score
